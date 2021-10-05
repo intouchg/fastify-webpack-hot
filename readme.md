@@ -1,4 +1,4 @@
-# @i/fastify-webpack-hot
+# @intouchg/fastify-webpack-hot
 
 Allows using a NodeJS Fastify server for development with Webpack hot reloading when `NODE_ENV=development`
 
@@ -16,7 +16,7 @@ const path = require('path')
 // own internal check for NODE_ENV=development.
 if (process.env.NODE_ENV === 'development') {
 	fastify.register(
-		require('@i/fastify-webpack-hot'),
+		require('@intouchg/fastify-webpack-hot'),
 		{ configPath: path.resolve(__dirname, 'webpack.config.js') }
 	)
 }
@@ -39,7 +39,7 @@ fastify.listen(3000, (error, address) => {
 		"fastify": "3.18.1"
 	},
 	"devDependencies": {
-		"@i/fastify-webpack-hot": "latest",
+		"@intouchg/fastify-webpack-hot": "latest",
 		"nodemon": "2.0.10"
 	}
 }
