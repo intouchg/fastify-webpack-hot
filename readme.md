@@ -7,7 +7,8 @@ Register the plugin with Fastify and set the `configPath` option to the absolute
 Make sure the `output.publicPath` option has been set in your Webpack config
 
 ```sh
-yarn add @intouchg/fastify-webpack-hot fastify nodemon
+yarn add fastify
+yarn add --dev @intouchg/fastify-webpack-hot nodemon
 ```
 
 ```jsonc

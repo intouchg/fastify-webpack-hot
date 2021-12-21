@@ -1,6 +1,6 @@
 {
 	"name": "@intouchg/fastify-webpack-hot",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Webpack hot reloading plugin for NodeJS Fastify server",
 	"main": "index.js",
 	"repository": "https://github.com/intouchg/fastify-webpack-hot",
