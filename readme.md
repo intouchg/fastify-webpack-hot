@@ -6,6 +6,26 @@ Register the plugin with Fastify and set the `configPath` option to the absolute
 
 Make sure the `output.publicPath` option has been set in your Webpack config
 
+```sh
+yarn add @intouchg/fastify-webpack-hot fastify nodemon
+```
+
+```jsonc
+// package.json
+{
+	"scripts": {
+		"dev": "NODE_ENV=development nodemon -w server.js"
+	},
+	"dependencies": {
+		"fastify": "3.25.1"
+	},
+	"devDependencies": {
+		"@intouchg/fastify-webpack-hot": "latest",
+		"nodemon": "2.0.15"
+	}
+}
+```
+
 ```js
 // server.js
 const fastify = require('fastify')({ logger: true })
@@ -27,20 +47,4 @@ fastify.listen(3000, (error, address) => {
 	if (error) throw error
 	console.log('Fastify server is listening on ' + address)
 })
-```
-
-```jsonc
-// package.json
-{
-	"scripts": {
-		"dev": "NODE_ENV=development nodemon -w server.js"
-	},
-	"dependencies": {
-		"fastify": "3.18.1"
-	},
-	"devDependencies": {
-		"@intouchg/fastify-webpack-hot": "latest",
-		"nodemon": "2.0.10"
-	}
-}
 ```
